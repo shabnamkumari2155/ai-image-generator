@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AI Image Generator</title>
+  <title>AI Image Generator</title>
 </head>
-
 <body>
 
 <h2>AI Image Generator</h2>
@@ -17,19 +16,12 @@
 <img id="image" width="400">
 
 <script>
-
 function generate(){
-
-let prompt = document.getElementById("prompt").value;
-
-prompt = prompt.replace(/ /g,"%20");
-
-let url = "https://image.pollinations.ai/prompt/" + prompt;
-
-document.getElementById("image").src = url;
-
+  let prompt = document.getElementById("prompt").value;
+  prompt = prompt.replace(/ /g,"%20");
+  let url = "https://image.pollinations.ai/prompt/" + prompt;
+  document.getElementById("image").src = url;
 }
-
 </script>
 
 </body>
