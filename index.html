@@ -1,4 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>AI Image Generator</title>
+</head>
+
+<body>
+
+<h2>AI Image Generator</h2>
+
+<input id="prompt" placeholder="Type your prompt">
+
+<button onclick="generateImage()">Generate Image</button>
+
+<br><br>
+
+<img id="image" width="400">
+
 <script>
+
 function generateImage(){
 
 let prompt = document.getElementById("prompt").value;
@@ -10,4 +30,9 @@ let url = "https://image.pollinations.ai/prompt/" + encodedPrompt;
 document.getElementById("image").src = url;
 
 }
+
 </script>
+
+</body>
+
+</html>
