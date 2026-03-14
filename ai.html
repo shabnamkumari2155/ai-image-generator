@@ -1,0 +1,41 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html>
+<head>
+<title>AI Image Generator</title>
+</head>
+
+<body>
+
+<h2>AI Image Generator</h2>
+
+<input id="prompt" placeholder="Type your prompt">
+
+<button onclick="generate()">Generate Image</button>
+
+<br><br>
+
+<img id="image" width="400">
+
+<script>
+
+function generate(){
+
+let prompt = document.getElementById("prompt").value;
+
+prompt = prompt.replace(/ /g,"%20");
+
+let url = "https://image.pollinations.ai/prompt/" + prompt;
+
+document.getElementById("image").src = url;
+
+}
+
+</script>
+
+</body>
+</html></pre>
+        </body>
+    </html>
