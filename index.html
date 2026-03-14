@@ -15,7 +15,7 @@
 
 <br><br>
 
-<img id="image" width="400">
+<img id="image" width="400" style="border:1px solid black;">
 
 <script>
 
@@ -25,7 +25,7 @@ let prompt = document.getElementById("prompt").value;
 
 let encodedPrompt = encodeURIComponent(prompt);
 
-let url = "https://image.pollinations.ai/prompt/" + encodedPrompt;
+let url = "https://image.pollinations.ai/prompt/" + encodedPrompt + "?width=512&height=512&seed=" + Math.random();
 
 document.getElementById("image").src = url;
 
